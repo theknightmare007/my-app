@@ -50,7 +50,7 @@ const PriceTable = () => {
 
     const intervalId = setInterval(() => {
       fetchData();
-    },2000);
+    },2500);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -73,7 +73,7 @@ const PriceTable = () => {
     .map(([symbol, price]) => (
       <tr key={symbol}>
         <td>{symbol}</td><br/>
-        <td>{Number(price).toFixed(4)}</td>
+        <td>{Number(price).toFixed(5)}</td>
       </tr>
     ))}
 </tbody>
