@@ -34,7 +34,7 @@ const PriceTable = () => {
 
     const intervalId = setInterval(() => {
       fetchData();
-    }, 4000);
+    }, 1000);
 
     return () => clearInterval(intervalId);
   }, []);
