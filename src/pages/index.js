@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div>
       <div>
-        <h1 align="center">CryptoCurrency Prices flashing</h1>
+        <h1 align="center">CryptoCurrency Prices flashing<br/>Made by @TheKnightzzz on telegram / @0xTheKnightmare on twitter</h1>
         <PriceTable />
       </div>
       <div align="center">
