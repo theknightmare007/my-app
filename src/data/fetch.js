@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const priceFetch = async () => {
-  let newarr = ["ATOM", "BNB", "BTC", "ONE", "LINK", "DOT", "ID", "HOOK", "AVAX", "ETH", "GRT" ,"KAVA" , "CTSI" ,"COTI" , "BUSD", "USDC", "MATIC"];
+  let newarr = ["ATOM", "BNB", "BTC", "ONE", "LINK", "DOT", "ID", "HOOK", "AVAX", "ETH", "GRT" ,"KAVA" , "CTSI" ,"COTI" , "BUSD", "USDC", "MATIC", "XTZ"];
   const priceData = {};
 
   const fetchPrice = (symbol) => {
@@ -63,7 +63,7 @@ const PriceTable = () => {
     <table>
       <thead>
         <tr>
-          <th>Symbol</th><br/><br></br>
+          <th>Symbol</th>
           <th>Price (USD)</th>
         </tr>
       </thead>
@@ -72,7 +72,7 @@ const PriceTable = () => {
     .sort(([symbol1], [symbol2]) => symbol1.localeCompare(symbol2))
     .map(([symbol, price]) => (
       <tr key={symbol}>
-        <td>{symbol}</td><br/>
+        <td>{symbol}</td>
         <td>{Number(price).toFixed(5)}</td>
       </tr>
     ))}
